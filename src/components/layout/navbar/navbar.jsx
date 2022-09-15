@@ -1,7 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 
 import { BsHouse, BsFolder, BsHammer } from "react-icons/bs"
-import { BsDiscord, BsTwitch, BsTwitter, BsYoutube } from "react-icons/bs"
+import { BsDiscord, BsGithub, BsTwitch, BsTwitter, BsYoutube } from "react-icons/bs"
 
 import SocialButton from "./social-button";
 
@@ -19,6 +19,7 @@ export default function Navbar() {
                 </Box>
                 <Flex>
                     <SocialButton Icon={BsDiscord} link="https://discord.gg/sKVYznRe4w" scheme="teal" />
+                    <SocialButton Icon={BsGithub} link="https://github.com/sammwyy" scheme="gray" />
                     { /* <SocialButton Icon={BsLinkedin} link="https://twitter.com/sammwy" scheme="linkedin" /> */ }
                     <SocialButton Icon={BsTwitch} link="https://twitch.tv/sammwy" scheme="purple" />
                     <SocialButton Icon={BsTwitter} link="https://twitter.com/sammwy" scheme="twitter" />
