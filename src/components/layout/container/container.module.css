@@ -7,6 +7,8 @@
 
 .page {
     border-radius: 15px;
-    width: 65%;
+    width: 70%;
     padding: 20px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
 }
