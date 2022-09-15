@@ -1,0 +1,12 @@
+.container {
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.page {
+    border-radius: 15px;
+    width: 65%;
+    padding: 20px;
+}

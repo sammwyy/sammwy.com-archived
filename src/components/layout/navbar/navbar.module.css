@@ -1,0 +1,19 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 40px;
+}
+
+.content {
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.label {
+    margin-left: 14px;
+}
