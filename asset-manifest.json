@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sammwy.com/static/css/main.9a293984.css",
-    "main.js": "/sammwy.com/static/js/main.b5a81782.js",
-    "index.html": "/sammwy.com/index.html",
-    "main.9a293984.css.map": "/sammwy.com/static/css/main.9a293984.css.map",
-    "main.b5a81782.js.map": "/sammwy.com/static/js/main.b5a81782.js.map"
+    "main.css": "/static/css/main.9a293984.css",
+    "main.js": "/static/js/main.7c51aecf.js",
+    "index.html": "/index.html",
+    "main.9a293984.css.map": "/static/css/main.9a293984.css.map",
+    "main.7c51aecf.js.map": "/static/js/main.7c51aecf.js.map"
   },
   "entrypoints": [
     "static/css/main.9a293984.css",
-    "static/js/main.b5a81782.js"
+    "static/js/main.7c51aecf.js"
   ]
 }
