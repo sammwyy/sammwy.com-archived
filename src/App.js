@@ -5,6 +5,7 @@ import Container from './components/layout/container/container';
 import Navbar from './components/layout/navbar/navbar';
 
 import Home from './pages/home';
+import Projects from './pages/projects';
 
 import theme from './theme';
 
@@ -18,6 +19,7 @@ function App() {
         <Container>
           <Routes>
             <Route index path="/" element={<Home/>} />
+            <Route index path="/projects" element={<Projects/>} />
           </Routes>
         </Container>
       </BrowserRouter>
