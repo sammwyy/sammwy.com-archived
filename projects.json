@@ -1,0 +1,28 @@
+{
+    "categories": [
+        {
+            "id": "apis",
+            "label": "APIs"
+        },
+        {
+            "id": "games",
+            "label": "Games"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Test Project",
+            "description": "This is just a test project",
+            "category": "apis",
+            "thumbnail": "/background.gif",
+            "link": "https://twitter.com/"
+        },
+        {
+            "name": "Another Project",
+            "description": "Another test project",
+            "category": "games",
+            "thumbnail": "/background.gif",
+            "link": "https://google.com/"
+        }
+    ]
+}
