@@ -1,28 +1,68 @@
 {
     "categories": [
         {
-            "id": "apis",
-            "label": "APIs"
+            "id": "bukkit",
+            "label": "Bukkit"
         },
         {
-            "id": "games",
-            "label": "Games"
+            "id": "java",
+            "label": "Java"
+        },
+        {
+            "id": "javascript",
+            "label": "JavaScript"
+        },
+        {
+            "id": "libraries",
+            "label": "Libraries"
+        },
+        {
+            "id": "twitch",
+            "label": "Twitch"
         }
     ],
     "projects": [
         {
-            "name": "Test Project",
-            "description": "This is just a test project",
-            "category": "apis",
-            "thumbnail": "/background.gif",
-            "link": "https://twitter.com/"
+            "name": "AdvancedAuth",
+            "description": "An advanced and secure authetication plugin for Minecraft.",
+            "categories": ["bukkit", "java"],
+            "thumbnail": "/thumbnails/advanced-auth.jpg",
+            "link": "https://github.com/2lstudios-mc/AdvancedAuth"
         },
         {
-            "name": "Another Project",
-            "description": "Another test project",
-            "category": "games",
-            "thumbnail": "/background.gif",
-            "link": "https://google.com/"
+            "name": "AdvancedParties",
+            "description": "An advanced parties plugin for Minecraft servers. Powered by MongoDB.",
+            "categories": ["bukkit", "java"],
+            "thumbnail": "/thumbnails/advanced-parties.jpg",
+            "link": "https://github.com/2lstudios-mc/AdvancedParties"
+        },
+        {
+            "name": "ASM",
+            "description": "Bukkit ASM/Mixin loader for easy bytecode manipulation from plugins.",
+            "categories": ["bukkit", "java"],
+            "thumbnail": "/thumbnails/asm.jpg",
+            "link": "https://github.com/2lstudios-mc/ASM"
+        },
+        {
+            "name": "Economy",
+            "description": "Vault hookeable economy plugin for Bukkit. Powered by MongoDB.",
+            "categories": ["bukkit", "java"],
+            "thumbnail": "/thumbnails/economy.jpg",
+            "link": "https://github.com/2lstudios-mc/Economy"
+        },
+        {
+            "name": "Milkshake ODM",
+            "description": "Annotation and object based ODM for the java mongodb-driver.",
+            "categories": ["java", "libraries"],
+            "thumbnail": "/thumbnails/milkshake-odm.jpg",
+            "link": "https://github.com/dotphin/milkshake-odm"
+        },
+        {
+            "name": "Show Emote",
+            "description": "Allow viewers to place emotes on your stream screen from chat.",
+            "categories": ["javascript", "twitch"],
+            "thumbnail": "/thumbnails/show-emote.jpg",
+            "link": "https://github.com/sammwyy/show-emote"
         }
     ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "sammwy-portfolio",
   "version": "0.1.0",
-  "homepage":"https://sammwyy.github.io/sammwy.com",
+  "homepage":"https://sammwy.com/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",

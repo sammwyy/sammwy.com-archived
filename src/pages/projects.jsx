@@ -24,7 +24,7 @@ function CategoryButton({ data }) {
     )
 }
 
-function ProjectCard({ link, name, description, category, thumb }) {
+function ProjectCard({ link, name, description, categories, thumb }) {
     return (
         <Box
             as="a"
@@ -40,10 +40,24 @@ function ProjectCard({ link, name, description, category, thumb }) {
             <Image src={thumb} borderRadius={"10px 10px 0 0"}/>
             <Box backgroundColor={"purple.800"} padding={"10px"} borderRadius={"0 0 10px 10px"}>
                 <Heading size={"sm"}>{name}</Heading>
-                <Text>{description}</Text>
-                <Tag marginTop={"10px"} size={"md"} borderRadius='full' variant='solid' bg={"#FFC0CB"} color={"#222"}>
-                    <TagLabel>{category}</TagLabel>
-                </Tag>
+                <Text color={"gray.300"} fontSize={"15px"}>{description}</Text>
+                
+                {
+                    categories.map((item, index) => (
+                        <Tag 
+                            key={index} 
+                            marginTop={"10px"} 
+                            marginRight={"5px"}
+                            size={"md"} 
+                            borderRadius='full' 
+                            variant='solid' 
+                            bg={"#FFC0CB"} 
+                            color={"#222"}
+                        >
+                            <TagLabel>{item}</TagLabel>
+                        </Tag>
+                    ))
+                }
             </Box>
         </Box>
     )
@@ -78,13 +92,13 @@ function ProjectDeck({ projects, categories }) {
 
                             return name.includes(term) || desc.includes(term);
                         }).filter(item => {
-                            return category === "*" ? true : item.category === category;
+                            return category === "*" ? true : item.categories.includes(category);
                         }).map((item, index) => 
                             <ProjectCard
                                 key={index}
                                 name={item.name}
                                 description={item.description}
-                                category={item.category}
+                                categories={item.categories}
                                 thumb={item.thumbnail}
                                 link={item.link}
                             />
@@ -109,7 +123,7 @@ export default function Projects() {
 
             for (const project of projects) {
                 for (const category of categories) {
-                    if (project.category === category.id) {
+                    if (project.categories.includes(category.id)) {
                         if (!category.projects) {
                             category.projects = 1;
                         } else {
