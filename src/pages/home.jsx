@@ -9,8 +9,8 @@ export default function Home() {
             <Box marginTop={"20px"}>
                 <Heading size={"xl"}>Who am i?</Heading>
                 <Text>
-                    My name is Valentina, I am a 20yo programmer from Argentina who likes to develop
-                    📖 libraries, 💻 APIs, 💜 utilities for streamers, 🎮 games,  crypto and many more
+                    My name is Sammwy, I am a 20yo programmer from Argentina who likes to develop
+                    📖 libraries, 💻 APIs, 💜 utilities for streamers, 🎮 games, 💸 crypto and many more
                     varied things that come from my imagination.
                 </Text>
 

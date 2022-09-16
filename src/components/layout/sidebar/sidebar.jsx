@@ -17,9 +17,9 @@ export default function Sidebar() {
             <Box className={styles["content"]} backgroundColor={"purple.900"}>
                 <Heading margin={"10px 0"} size={"md"}>🌱 About me</Heading>
                 <AboutMeSection label={"Age"} value={"20"}/>
+                <AboutMeSection label={"Birthday"} value={"Nov, 23"}/>
                 <AboutMeSection label={"Country"} value={"Argentina"}/>
-                <AboutMeSection label={"City"} value={"Buenos Aires"}/>
-                <AboutMeSection label={"Gender"} value={"Female"}/>
+                <AboutMeSection label={"State"} value={"Buenos Aires"}/>
             </Box>
 
             <Box marginTop={"25px"} className={styles["content"]} backgroundColor={"purple.900"}>
