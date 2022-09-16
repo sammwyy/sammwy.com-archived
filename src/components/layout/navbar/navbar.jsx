@@ -11,13 +11,13 @@ import PageButton from "./page-button";
 export default function Navbar() {
     return (
         <Box className={styles["navbar"]}>
-            <Flex className={styles["content"]} backgroundColor={"purple.900"}>
+            <Box className={styles["content"]} backgroundColor={"purple.900"}>
                 <Box>
                     <PageButton Icon={BsHouse} link={"/"}>Me</PageButton>
                     <PageButton Icon={BsFolder} link={"/projects"}>Projects</PageButton>
                     <PageButton Icon={BsHammer} link={"/hire-me"}>Hire Me</PageButton>
                 </Box>
-                <Flex>
+                <Flex className={styles["social"]}>
                     <SocialButton Icon={BsDiscord} link="https://discord.gg/sKVYznRe4w" scheme="teal" />
                     <SocialButton Icon={BsGithub} link="https://github.com/sammwyy" scheme="gray" />
                     { /* <SocialButton Icon={BsLinkedin} link="https://twitter.com/sammwy" scheme="linkedin" /> */ }
@@ -25,7 +25,7 @@ export default function Navbar() {
                     <SocialButton Icon={BsTwitter} link="https://twitter.com/sammwy" scheme="twitter" />
                     <SocialButton Icon={BsYoutube} link="https://youtube.com/c/sammwy" scheme="red" />
                 </Flex>
-            </Flex>
+            </Box>
         </Box>
     )
 }
