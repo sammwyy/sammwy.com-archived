@@ -51,6 +51,13 @@
             "link": "https://github.com/2lstudios-mc/Economy"
         },
         {
+            "name": "HTTPLib",
+            "description": "HTTP Server library for Java.",
+            "categories": ["java", "librarie"],
+            "thumbnail": "/thumbnails/httplib.jpg",
+            "link": "https://github.com/sammwyy/httplib"
+        },
+        {
             "name": "Milkshake ODM",
             "description": "Annotation and object based ODM for the java mongodb-driver.",
             "categories": ["java", "libraries"],
