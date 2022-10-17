@@ -5,6 +5,10 @@
       "label": "Bukkit"
     },
     {
+      "id": "c#",
+      "label": "C#"
+    },
+    {
       "id": "java",
       "label": "Java"
     },
@@ -17,8 +21,20 @@
       "label": "Libraries"
     },
     {
+      "id": "rust",
+      "label": "Rust"
+    },
+    {
       "id": "twitch",
       "label": "Twitch"
+    },
+    {
+      "id": "unity",
+      "label": "Unity"
+    },
+    {
+      "id": "vr",
+      "label": "VR"
     }
   ],
   "projects": [
@@ -44,6 +60,20 @@
       "link": "https://github.com/2lstudios-mc/ASM"
     },
     {
+      "name": "Class Serializer",
+      "description": "Serialize and deserialize classes into maps. Simple transport of classes and objects.",
+      "categories": ["java", "libraries"],
+      "thumbnail": "/thumbnails/class-serializer.png",
+      "link": "https://github.com/dotphin/class-serializer"
+    },
+    {
+      "name": "Class Validator",
+      "description": "Annotation-based field validation for Classes. Easily validate data.",
+      "categories": ["java", "libraries"],
+      "thumbnail": "/thumbnails/class-validator.png",
+      "link": "https://github.com/dotphin/class-validator"
+    },
+    {
       "name": "Economy",
       "description": "Vault hookeable economy plugin for Bukkit. Powered by MongoDB.",
       "categories": ["bukkit", "java"],
@@ -58,6 +88,13 @@
       "link": "https://github.com/sammwyy/httplib"
     },
     {
+      "name": "Kitty Paw",
+      "description": "Kernel BIOS powered by Rust. Based on the phil-oop guide.",
+      "categories": ["rust"],
+      "thumbnail": "/thumbnails/kitty-paw.png",
+      "link": "https://github.com/sammwyy/kitty-paw"
+    },
+    {
       "name": "Milkshake ODM",
       "description": "Annotation and object based ODM for the java mongodb-driver.",
       "categories": ["java", "libraries"],
@@ -70,6 +107,13 @@
       "categories": ["javascript", "twitch"],
       "thumbnail": "/thumbnails/show-emote.jpg",
       "link": "https://github.com/sammwyy/show-emote"
+    },
+    {
+      "name": "UmiVR",
+      "description": "Open-source VTuber software (Supports Live2D, PNGTuber)",
+      "categories": ["c#", "unity", "vr"],
+      "thumbnail": "/thumbnails/umivr.png",
+      "link": "https://github.com/sammwyy/umivr"
     }
   ]
 }
