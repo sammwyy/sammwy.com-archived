@@ -104,7 +104,7 @@ function ProjectDeck({ projects, categories }) {
       </Box>
 
       <Box marginTop={"30px"}>
-        <SimpleGrid columns={3} spacing={10}>
+        <SimpleGrid minChildWidth={"180px"} spacing={10}>
           {projects
             .filter((item) => {
               const term = searchTerm.toLowerCase();
