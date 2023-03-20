@@ -1,14 +1,16 @@
 .sidebar {
-    width: 25%;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .content {
-    padding: 5px 20px;
-    border-radius: 15px;
+    padding: 24px;
+    border-radius: 16px;
+    flex-direction: column;
+    gap: 16px;
+    height: min-content;
 }
 
-@media only screen and (max-width: 725px) {
-    .sidebar {
-        display: none;
-    }
+.heading {
+    text-align: center;
 }

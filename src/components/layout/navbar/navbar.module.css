@@ -1,50 +1,57 @@
 .navbar {
-    width: 100%;
-    position: fixed;
-    top: 40px;
-}
-
-.content {
-    width: 80%;
-    min-height: 40px;
-    border-radius: 15px;
-    margin: auto;
+    border-radius: 16px;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
     display: flex;
+    padding: 8px 16px;
+    height: min-content;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.pages {
+    display: flex;
+    gap: 4px;
+}
+
+.pages>a>span {
+    display: flex;
+    gap: 8px;
+    padding: 0 8px;
+    align-items: center;
+    border-radius: 12px;
 }
 
 .social {
-    margin-top: 0px;
+    gap: 8px;
 }
 
-.label {
-    margin-left: 14px;
+.social>a {
+    padding: 8px;
 }
 
-@media only screen and (max-width: 850px) {
-    .content {
-        width: 88%;
-    }
+.social>a:focus,
+.social>a:hover {
+    background-color: var(--chakra-colors-whiteAlpha-200);
 }
 
-@media only screen and (max-width: 650px) {
-    .content {
-        width: 93%;
-        display: block;
-        text-align: center;
-    }
+.social>a:active {
+    background-color: var(--chakra-colors-whiteAlpha-400);
+}
 
-    .social {
-        margin: 10px 0;
-        width: 100%;
+.social>a>svg,
+.pages>a>span>svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
         justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .content {
-        width: 98%;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }

@@ -1,15 +1,17 @@
 import { IconButton } from "@chakra-ui/react";
 
-export default function SocialButton({link, scheme, Icon}) {
+export default function SocialButton(props) {
+    const { link, scheme, Icon, } = props
+
     return (
         <IconButton
             as="a"
             variant={"link"}
-            colorScheme={scheme}
-            icon={<Icon />}
+            icon={<Icon fill={scheme} />}
             href={link}
             target="_blank"
             referrerPolicy="no-referrer"
+            aria-label={props["aria-label"]}
         />
     )
 }
