@@ -1,50 +1,54 @@
-import { Avatar, Badge, Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Avatar, Badge, Flex, Heading, Text } from "@chakra-ui/react";
 
 function TechIcon({ id }) {
-    return (
-        <Box height={"32px"} marginRight={"5px"}>
-            <img height={"100%"} src={"/icons/technologies/" + id + ".webp"} alt={id + " icon"}/>
-        </Box>
-    )
+    return <img src={"/icons/technologies/" + id + ".webp"} alt={id + " icon"} />
 }
 
-export default function PresentationCard() {
-    return (
-        <Flex>
-        <Box>
-            <Box>
-                <Avatar size="2xl" src="https://avatars.githubusercontent.com/u/44925968?v=4" />
-            </Box>
-            <Box textAlign={"center"}>
-                <Badge colorScheme={"pink"}>Available to Hire</Badge>
-            </Box>
-        </Box>
-        <Box marginLeft={"20px"}>
-            <Heading size={"xl"}>Sammwy</Heading>
-            <Text>⚛️ React frontend dev, backend on NestJS.</Text>
-            <Text>☕ Java and Minecraft dev with 4 years of experience.</Text>
-            <Text>💖 Coding twitch stuff for streamers.</Text>
+const techs = [
+    "csharp",
+    "electron",
+    "graphql",
+    "html",
+    "java",
+    "javascript",
+    "mongodb",
+    "mysql",
+    "nestjs",
+    "nginx",
+    "nodejs",
+    "python",
+    "react",
+    "redis",
+    "relay",
+    "typescript",
+    "unity"
+]
 
-            <Flex marginTop={"5px"}>
-                <TechIcon id={"csharp"} />
-                <TechIcon id={"electron"} />
-                <TechIcon id={"graphql"} />
-                <TechIcon id={"html"} />
-                <TechIcon id={"java"} />
-                <TechIcon id={"javascript"} />
-                <TechIcon id={"mongodb"} />
-                <TechIcon id={"mysql"} />
-                <TechIcon id={"nestjs"} />
-                <TechIcon id={"nginx"} />
-                <TechIcon id={"nodejs"} />
-                <TechIcon id={"python"} />
-                <TechIcon id={"react"} />
-                <TechIcon id={"redis"} />
-                <TechIcon id={"relay"} />
-                <TechIcon id={"typescript"} />
-                <TechIcon id={"unity"} />
+export default function PresentationCard({ flexWrap }) {
+    return (
+        <Flex gap="20px" flexWrap={flexWrap}>
+            <Flex flexDirection="column" gap="24px" justifyContent="center" alignItems="center" flexGrow="1">
+                <Flex gap="4px" flexDirection="column">
+                    <Avatar size="2xl" alt="Avatar image" src="https://avatars.githubusercontent.com/u/44925968?v=4" />
+                    <Heading size="md" textAlign="center">Sammwy</Heading>
+                </Flex>
+
+                <Badge colorScheme="pink" w="fit-content">Available to Hire</Badge>
             </Flex>
-        </Box>
-    </Flex>
+
+            <Flex flexDirection="column" gap="10px">
+                <Text>
+                    ⚛️ React frontend dev, backend on NestJS. ☕ Java and Minecraft dev with 4 years of experience. 💖 Coding twitch stuff for streamers.
+                </Text>
+
+                <Flex gap="8px" flexWrap="wrap" backgroundColor="whiteAlpha.50" padding="8px" borderRadius="8px">
+                    {
+                        techs.map((tech) => {
+                            return <TechIcon id={tech} key={tech} />
+                        })
+                    }
+                </Flex>
+            </Flex>
+        </Flex>
     )
 }

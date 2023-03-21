@@ -2,7 +2,7 @@ import { Box, Heading, Text, UnorderedList } from "@chakra-ui/react";
 
 export default function HireMe() {
     return (
-        <Box>
+        <Box data-class="page">
             <Heading size={"xl"}>Hire me</Heading>
             <Text>
                 Do you want to hire my services as a freelancer? I can make
