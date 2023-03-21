@@ -11,7 +11,7 @@ function AboutMeSection({ label, value }) {
 function CurrentAge() {
     const
         currentDate = new Date(),
-        myDate = new Date("2002/11/23"), // 👈 Pon tu fecha de nacimiento acá (el año lo puse tomando cómo referencia mi fecha de nacimiento 😅)
+        myDate = new Date("2002/11/23"),
         years = new Date(+currentDate - +myDate).getFullYear() - 1970;
 
     return years
