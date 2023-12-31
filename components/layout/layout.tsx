@@ -4,7 +4,7 @@ import { PropsWithChildren } from 'react';
 
 import Container from './container';
 import Frame from './frame';
-import Navbar from './navbar/navbar';
+import Navbar from './navbar';
 import Sidebar from './sidebar';
 
 export default function Layout({ children }: PropsWithChildren) {

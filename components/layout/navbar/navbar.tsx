@@ -15,7 +15,7 @@ import SocialButton from '@/components/buttons/social-button';
 
 import styles from './navbar.module.css';
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <Box className={styles['navbar']} backgroundColor={'purple.900'}>
       <Box>
