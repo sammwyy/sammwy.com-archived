@@ -1,0 +1,53 @@
+.wrapper {
+    position: fixed;
+    top: 100px;
+    height: 100vh;
+    width: 100%
+}
+
+.container {
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.page {
+    border-radius: 15px;
+    width: 70%;
+    padding: 20px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .page {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 93%;
+    }
+    
+    .wrapper {
+        top: 150px;
+    }
+    
+    .page {  
+        max-height: calc(100vh - 150px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 98%;
+    }
+}

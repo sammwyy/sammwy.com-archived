@@ -1,0 +1,53 @@
+.frame {
+  flex-direction: column;
+}
+
+.titlebar {
+  height: 24px;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  user-select: none;
+}
+
+.title {
+  font-size: 13px;
+}
+
+.controls {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.control {
+  background-color: #000;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.control:active {
+  transform: scale(1.05);
+  filter: invert(1);
+}
+
+.large-content,
+.small-content {
+  background-color: #000c;
+}
+
+.large-content {
+  padding: 20px;
+}
+
+.small-content {
+  padding: 5px 20px;
+}

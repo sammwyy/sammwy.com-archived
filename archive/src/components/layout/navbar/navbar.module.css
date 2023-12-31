@@ -1,0 +1,50 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 40px;
+}
+
+.content {
+    width: 80%;
+    min-height: 40px;
+    border-radius: 15px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    display: flex;
+}
+
+.social {
+    margin-top: 0px;
+}
+
+.label {
+    margin-left: 14px;
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content {
+        width: 93%;
+        display: block;
+        text-align: center;
+    }
+
+    .social {
+        margin: 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .content {
+        width: 98%;
+    }
+}

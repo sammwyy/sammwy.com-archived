@@ -1,0 +1,14 @@
+:root {
+  --primary: #927cf1;
+  --secondary: #ffc5f3;
+  --gradient: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

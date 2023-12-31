@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  display: flex;
+}
+
+.social {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 850px) {
+  .content {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .content {
+    width: 93%;
+    display: block;
+    text-align: center;
+  }
+
+  .social {
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 98%;
+  }
+}
